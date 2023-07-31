@@ -42,3 +42,5 @@ if (num2%2 === 0 || num2%3 === 0 || num2%5 === 0){
 } else {
     console.log("Não é divisível por 2, por 3 ou por 5")
 };
+
+;
