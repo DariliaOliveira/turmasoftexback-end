@@ -58,7 +58,7 @@
 //   console.log( numeroPrimo(5) );
 
 
-//teste
+//testes
 
 
 
