@@ -42,19 +42,19 @@
 // }
 
 
-var meuCarro = new Object();
-meuCarro.fabricacao = "Ford";
-meuCarro.modelo = "Mustang";
-meuCarro.ano = 1969;
-meuCarro.semPropriedade;
+// var meuCarro = new Object();
+// meuCarro.fabricacao = "Ford";
+// meuCarro.modelo = "Mustang";
+// meuCarro.ano = 1969;
+// meuCarro.semPropriedade;
 
-let readline = require('readline-sync');
-let carro = readline.question('Digite uma propriedade do carro: ');
-try{
-    console.log("Iniciando verificação de propriedade...");
-    throw "Propriedade inexistente"
-}catch(erro){
-    console.log("[Error:] Propriedade não encontrada.")
-}
+// let readline = require('readline-sync');
+// let carro = readline.question('Digite uma propriedade do carro: ');
+// try{
+//     console.log("Iniciando verificação de propriedade...");
+//     throw "Propriedade inexistente"
+// }catch(erro){
+//     console.log("[Error:] Propriedade não encontrada.")
+// }
 
 
