@@ -28,10 +28,12 @@
 //     } 
 // } console.log(resultado)
 
-let obj = { alice: 18, bob: 20, carol: 19, david: 21};
-let idade = [];
-for (let i in obj) {
-    if(obj[i] == 19){
-        console.log(`${i}`,`${obj[i]}`);
-    }
-} 
+// let obj = { alice: 18, bob: 20, carol: 19, david: 21};
+// let idade = [];
+// for (let i in obj) {
+//     if(obj[i] == 19){
+//         console.log(`${i}`,`${obj[i]}`);
+//     }
+// } 
+
+
