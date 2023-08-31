@@ -121,19 +121,132 @@
 
 // console.log("A quantia líquida a ser recebida pelo encanador é " + quantiaLiquida);
 
+// const readline = require('readline-sync');
+
 // 7. Faça um programa para ler um horário (hora:minuto:segundo) de início e a duração,
 // em segundos, de uma experiência biológica. O programa deve informar o horário
-// (hora:minuto:segundo) de término da mesma.
-
+// (hora:minuto:segundo) de término da mesma. ****
 
 // corrigir:
 
 let readline = require("readline-sync");
-let horarioInicio = readline.question("Digite o horário de início do procedimento: ");
-let duracao = readline.question("Digite a duração do procedimento em segundos: ");
+// let time = new Date('August 31, 2023 12:00:00');
+// let horarioInicio = readline.question("Digite o horário de início do procedimento: ");
+// time.setHours();
+// let duracao = readline.question("Digite a duração do procedimento em segundos: ");
+// time.setMinutes();
 
-let horarioFinal = horarioInicio + duracao;
+// // let horarioFinal = (horarioInicio.getTime() + duracao.getTime())/ 1000;
 
-console.log("O horário final do procedimento é " + horarioFinal);
+// console.log(`O horário final do procedimento é ${time}`);
 
+
+//questao 8
+
+// let horas = readline.questionInt('Informe as horas trabalhadas:');
+// let horaExtra = readline.questionInt('Informe a quantidade de horas extras:');
+
+// let valorHora = horas*10
+// let valorHoraExtra = horaExtra*15
+// let total = valorHora + valorHoraExtra
+
+// console.log(`Seu salário anual é R$ ${total}`)
+
+//questão 9
+
+// let num = []
+
+// let num1 = readline.questionInt('Informe o primeiro número:')
+// num[0] = num1
+
+// let num2 = readline.questionInt('Informe o segundo número:')
+// num[1] = num2
+
+// let num3 = readline.questionInt('Informe o terceiro número:')
+// num[2] = num3
+
+// function ordem (a, b){
+//     return (a-b)
+// }
+// num.sort(ordem)
+// console.log(num)
+
+//questão 10
+
+// console.log(`Informe a opção de conversão:
+// 1.	de Celsius para Fahrenheit.
+// 2.	de Celsius para Kelvin.
+// 3.	de Fahrenheit para Celsius.
+// 4.	de Fahrenheit para Kelvin.
+// 5.	de Kelvin para Celsius.
+// 6.	de Kelvin para Fahrenheit
+// `)
+
+// let op = readline.questionInt('')
+// let valor = 0
+// switch(op){
+//     case 1:
+//         valor = readline.questionInt(`Digite o valor para conversão:`)
+//         valor = (valor * (9/5)) + 32 
+//         console.log(`Conversão : ${valor}`)
+//         break;
+//     case 2:
+//         valor = readline.questionInt(`Digite o valor para conversão:`)
+//         valor = valor + 273.15
+//         console.log(`Conversão : ${valor}`)
+//         break;
+//     case 3:
+//         valor = readline.questionInt(`Digite o valor para conversão:`)
+//         valor =(valor-32)/1.8
+//         console.log(`Conversão : ${valor}`)
+//         break;
+//     case 4:
+//         valor = readline.questionInt(`Digite o valor para conversão:`)
+//         valor =(valor - 32) * 5/9 + 273,15
+//         console.log(`Conversão : ${valor}`)
+//         break;
+//     case 5:
+//         valor = readline.questionInt(`Digite o valor para conversão:`)
+//         valor = valor - 273.15 
+//         console.log(`Conversão : ${valor}`)
+//         break;
+//     case 6:
+//         valor = readline.questionInt(`Digite o valor para conversão:`)
+//         valor = (valor - 273.15) * 9/5 + 32 
+//         console.log(`Conversão : ${valor}`)
+//         break;
+//     default:
+//         console.log('Erro')
+// }
+
+//questão 11
+
+let mes = readline.question('Digite um mês:');
+let ano = readline.questionInt('Digite um ano:');
+const meses = {
+    janeiro: 31,
+    fevereiro: 28,
+    marco: 31,
+    abril: 30,
+    maio: 31,
+    junho: 30,
+    julho: 31,
+    agosto: 31,
+    setembro: 30,
+    outubro: 31,
+    novembro: 30,
+    dezembro: 31
+};
+function insiraMes (mes, ano){
+    if(ano % 4 === 0 && ano % 100 !== 0){
+        meses.fevereiro = 29
+    }
+    for (let index in meses){
+        if(mes == index){
+            return meses[index]
+        }
+    }
+}
+let dias = insiraMes(mes, ano);
+console.log(dias)
 
