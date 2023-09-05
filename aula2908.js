@@ -223,7 +223,7 @@ let readline = require("readline-sync");
 
 let mes = readline.question('Digite um mês:');
 let ano = readline.questionInt('Digite um ano:');
-const meses = {
+let meses = {
     janeiro: 31,
     fevereiro: 28,
     marco: 31,
@@ -246,7 +246,7 @@ function insiraMes (mes, ano){
             return meses[index]
         }
     }
-}
+};
 let dias = insiraMes(mes, ano);
-console.log(dias)
+console.log(dias);
 
